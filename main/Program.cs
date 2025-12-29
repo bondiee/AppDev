@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Input how many numbers you want to average: ");
+        Console.Write("How many numbers do you want to average? ");
         int count = int.Parse(Console.ReadLine());
 
         double sum = 0;
