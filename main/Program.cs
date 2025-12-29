@@ -1,11 +1,23 @@
 ﻿using System;
+
 class Program
 {
     static void Main()
     {
-        int age = 20;
-        Console.WriteLine("My name is Kurt from BSCS 3-2!");
-        Console.WriteLine("Age: " + age);
-        Console.WriteLine("This Repository is for my AppDev Requirements!");
+        Console.Write("How many numbers do you want to average? ");
+        int count = int.Parse(Console.ReadLine());
+
+        double sum = 0;
+
+        for (int i = 1; i <= count; i++)
+        {
+            Console.Write("Enter number " + i + ": ");
+            double num = double.Parse(Console.ReadLine());
+            sum += num;
+        }
+
+        double average = sum / count;
+
+        Console.WriteLine("The average is: " + average);
     }
 }
