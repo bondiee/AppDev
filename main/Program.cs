@@ -18,6 +18,6 @@ class Program
 
         double average = sum / count;
 
-        Console.WriteLine("The average is: " + average);
+        Console.WriteLine("Your average is: " + average);
     }
 }
